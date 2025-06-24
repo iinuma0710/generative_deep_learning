@@ -59,10 +59,10 @@ Fashion-MNIST データセットを使って、画像の生成を行うオート
 | InputLayer | (None, 2) | 0 |
 | Dense | (None, 2048) | 6144 |
 | Reshape | (None, 4, 4, 128) | 0 |
-| Conv2D | (None, 8, 8, 128) | 147,584 |
-| Conv2D | (None, 16, 16, 64) | 73,792 |
-| Conv2D | (None, 32, 32, 32) | 18,464 |
-| InputLayer | (None, 32, 32, 1) | 289 |
+| Conv2DTranspose | (None, 8, 8, 128) | 147,584 |
+| Conv2DTranspose | (None, 16, 16, 64) | 73,792 |
+| Conv2DTranspose | (None, 32, 32, 32) | 18,464 |
+| Conv2D | (None, 32, 32, 1) | 289 |
 
 転置畳み込みは、通常の畳み込み層とは逆に、stride が 2 の場合には $3 \times 3$ のカーネル (灰色) が $3 \times 3$ の特徴マップ (青) から $6 \times 6$ の特徴マップ (緑) を生成する。
 
